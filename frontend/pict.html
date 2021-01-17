@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<title>Online Event Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 10;
+
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 50px;
+      background-color: grey;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 700px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:700;} 
+    }
+
+ 
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+p.padding {
+    padding-bottom: 0cm;
+}
+.jumbotron{
+margin-top: -50px;
+margin-bottom: -20px;
+background-color: sky blue;
+background-image: url("https://cdn.pixabay.com/photo/2017/02/12/02/54/fractal-2059202__340.jpg");
+
+padding-bottom: 0;
+
+}
+
+}
+
+w3-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+width: 100%;
+}
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+   
+}
+
+  </style>
+
+
+<body>
+
+<!--*****************************************************-->
+
+<div class="head">
+<p class="padding= 0px">
+
+<div class="jumbotron">
+
+<center> <h1 style="color:white; text-shadow: 7px 7px black;font-family: Impact;font-size-adjust: 5.58; font-size: 900%;">ONLINE EVENT PORTAL</h1></center><br>
+</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="front.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">REGIONS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="m.html">MUMBAI</a></li>
+            <li><a href="pune.html">PUNE</a></li>
+            <li><a href="Aurangabad-region.html">AURANGABAD</a></li>
+            <li><a href="nagpur.html">NAGPUR</a></li>
+            
+          </ul>
+        </li>
+       <li style="color:black;">
+     <form name="myForm" class="form-horizontal" action="pict_registration.php" method="POST">
+
+        <button  type="submit" class="w3-btn w3-#3e3267" style="background-color:black;padding: 14px 22px;text-align: center;color: white;">VIEW REGISTRATION</button>
+      </form>
+</li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--*****************************************************-->
+
+
+
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1900px;" id="home">
+  <img class="Elevate.img" src="https://www.campustimespune.com/wp-content/uploads/2016/02/pict-2016-elevate-event-basketball-pune.jpg" alt="Elevate" width="1900" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Mindsparks</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1900px;">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>Events</strong></h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">INC</div>
+        <img src="http://knowanevent.in/festpic/11.png" alt="Inc" width="300" height="200">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Hackathon</div>
+        <img src="https://raw.githubusercontent.com/codetricity/picts/master/theta_developers_developerweek.png" alt="Hackathon" width="300" height="200">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Scientia</div>
+        <img src="http://pict.edu/wp-content/uploads/2015/10/scientia.jpg" alt="Scientia" width="300" height="200">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Swayantra</div>
+        <img src="http://pictinc.org/assets/img/events/Swayantra.png" alt="Swayantra" width="300" height="200">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Yantra</div>
+        <img src="http://pictinc.org/assets/img/events/Yantra.png" alt="Yantra" width="300" height="200">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Sustainability Quiz</div>
+        <img src="http://pictinc.org/assets/img/events/Sustain.png" alt="Sustain" width="300" height="200">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">NetWars</div>
+        <img src="https://blogs.sans.org/pen-testing/files/2013/03/NetWars.png" alt="Netwars" width="300" height="200">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Pulzion</div>
+        <img src="http://pict.edu/wp-content/uploads/2015/10/pulzion.jpg" alt="Pulzion" width="300" height="200">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>About IMPETUS AND CONCEPTS '17</strong></h3>
+    <p>Impetus and Concepts is a technical event organized by PICT. This technical fest has ten events namely-Concepts, Pradnya, Pratibha, Swayantra, Tantra, Yantra, Net Wars, Social-Hackathon Sustainability Quiz and Internship Fair which will be held on 24th, 25th and 26th of March 2017. INC is an intercollegiate national level competition which has been catching the attention of corporate giants for sponsorship as well as guidance to budding entrepreneurs.
+ Every year INC sets a platform for students to design, exhibit and watch their ideas come true. About 2400+ odd students participated from 150+ engineering colleges throughout India last year and we're confident to see even more this year.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://pictinc.org/assets/img/events/Pradnya.png" alt="Pradnya" width="300" height="250">
+      <h3>Pradnya</h3>
+     <p class="w3-opacity">C/C++ Coding</p>
+      <p> If C/C++ is your forte then Pradnya is the competition for you.
+           Pradnya tests how strong your C/C++ game is with tricky MCQs 
+           and goes on to survey your programming skills with a problem statement.</br></p>
+      <p><button class="w3-button w3-black w3-block">Register</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://pictinc.org/assets/img/events/Pratibha.png" alt="pratibha" width="300" height="250">
+      <h3>Pratibha</h3>
+      <p class="w3-opacity">Ideas on Comprehensive Technical Research</p>
+      <p> Pratibha is a Paper Presentation event to portray your talent and in depth knowledge in technical areas of your interest.Aspire to fulfil the expectations of the judges in the form of PAPER PRESENTATION.</p>
+      <p><button class="w3-button w3-black w3-block">Register</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://pictinc.org/assets/img/events/NetWars.png" alt="Netwars" width="300" height="250">
+      <h3>NetWars</h3>
+      <p class="w3-opacity">Real Time Computer Networking Challenges</p>
+      <p>Net-wars is a real time network based competition which consists of 3 rounds: NCQ, Net-Hunt, Net-Disenar.</p></br></br>
+      <p><button class="w3-button w3-black w3-block">Register</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://pictinc.org/assets/img/events/Tantra.png" alt="Tantra" width="300" height="250">
+      <h3>Tantra</h3>
+      <p class="w3-opacity">Micro control and digital signal processing</p>
+      <p>Tantra-1:PIC18 micro­controller based event.Tantra-2:Digital Signal Processing (DSP) based problem solving competition</br></br></p></br>
+      <p><button class="w3-button w3-black w3-block">Register</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>Contact</strong></h3>
+    <label for="college"><strong>College:</strong></label>
+      <label for="clg_name">Pune Institute of Computer Technology</label></br>
+    <label for="Address"><strong>Address:</strong></label>
+ <label for="address">Sr. No 27, Pune-Satara Road, Behind Bharati Vidyapeeth College, Dhankawadi, Pune, Maharashtra 411043, INDIA.</label></br>
+    <h4>Co-ordinator</h4>
+    <form action="/action_page.php" target="_blank">
+      <label for="email"><strong>Name:</strong></label>
+      <label for="email">Shalaka Take</label></br>
+      <label for="email"><strong>Email address:</strong></label>
+     <label for="email">shalakatake15@gmail.com</label></br>
+      <label for="email"><strong>Contact:</strong></label>
+      <label for="email">8308323450</label></br></br>
+     <label for="comment"><strong>Comment:</strong></label></br></br>
+     <textarea class="form-control" rows="5" cols="100" id="comment"></textarea></br>
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> Comment
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;">
+<script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=37.0625&long=-95.6770&zoom=4&width=1350&height=400&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle="></script><br />
+</div>
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <center>
+<center><p>Contact Us With</p>  
+  <img src="http://marketingland.com/wp-content/ml-loads/2014/07/google-plus-logo-1920.png" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+   <img src="http://lofrev.net/wp-content/photos/2016/07/twitter_logo.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+    <img src="http://img.talkandroid.com/uploads/2014/06/instagram_app_icon-450x450.png"  class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+     <img src="http://www.hd-freeimages.com/uploads/large/logo-wallpapers/free-hd-facebook-icon-wallpapers-download.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+ </center>
+</center>
+</footer>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+
+</body>
+</html>

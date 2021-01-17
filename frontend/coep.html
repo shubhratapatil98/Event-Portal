@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<title>Online Event Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 10;
+
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 50px;
+      background-color: grey;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 700px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:700;} 
+    }
+
+
+    .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+p.padding {
+    padding-bottom: 0cm;
+}
+.jumbotron{
+margin-top: -50px;
+margin-bottom: -20px;
+background-image: url("https://cdn.pixabay.com/photo/2017/02/12/02/54/fractal-2059202__340.jpg");
+
+padding-bottom: 0;
+
+}
+.w3-black w3-section
+{
+ background-color: #3B9EF5;
+    border: none;
+    color: white;
+    padding: 1px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+w3-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+width: 100%;
+}
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+   
+}
+  </style>
+
+
+<body>
+
+<!--*****************************************************-->
+
+<div class="head">
+<p class="padding= 0px">
+
+<div class="jumbotron">
+
+<center> <h1 style="color:white; text-shadow: 7px 7px black;font-family: Impact;font-size-adjust: 5.58; font-size: 900%;">ONLINE EVENT PORTAL</h1></center><br>
+</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="front.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">REGIONS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="m.html">MUMBAI</a></li>
+            <li><a href="pune.html">PUNE</a></li>
+            <li><a href="nagpur.html">NAGPUR</a></li>
+             <li><a href="Aurangabad-region.html">AURANGABAD</a></li>
+          </ul>
+        </li>
+      <li style="color:black;">
+     <form name="myForm" class="form-horizontal" action="coep_registration.php" method="POST">
+
+        <button  type="submit" class="w3-btn w3-#3e3267" style="background-color:black;padding: 14px 22px;text-align: center;color: white;">VIEW REGISTRATION</button>
+      </form>
+</li>
+	
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--*****************************************************-->
+
+
+
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1900px;" id="home">
+  <img class="mindspark.img" src="http://1.bp.blogspot.com/-4eCCF8XPsM8/VbCdc2ee1UI/AAAAAAAAOWQ/-Hkkxlg4dso/s1600/mind%2Bspark%2B15.jpg" alt="mindspark" width="1900" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b></b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1900px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>Events</strong></h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Regatta</div>
+        <img src="http://www.coep.org.in/sites/default/files/styles/slide/public/slideshow%20images/carousel.jpg?itok=3cCr_15t" alt="Regatta" width="400" height="250">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cognition</div>
+        <img src="http://www.mind-spark.org/img/smallcard/cognitio.jpg" alt="Cognition" width="400" height="250">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Hackathon</div>
+        <img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=VDMNA15a2G8t3aBuZFv0Vg5ANWU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdf3XsfZHXcOaouQ4VfCkclANhLvL5QmOwD5PtKozofYh1iJ_kJo24ZxUBbFI8lWxI" alt="Hackathon" width="400" height="250">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Structura</div>
+        <img src="http://www.mind-spark.org/img/structura.jpg" alt="Structura" width="400" height="250">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Prodigium</div>
+        <img src="http://www.mind-spark.org/img/prodigium.jpg" alt="Prodigium" width="400" height="250">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Illuminati</div>
+        <img src="http://www.mind-spark.org/img/illuminati.jpg" alt="ICCAS" width="400" height="250">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Robotics</div>
+        <img src="http://www.mind-spark.org/img/smallcard/robustus.jpg" alt="Robotics" width="400" height="250">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Dnyanodaya</div>
+        <img src="http://www.coep.org.in/sites/default/files/styles/slide/public/slideshow%20images/IMG-20170311-WA0008.jpg?itok=JeIbE4bs" alt="Dnyanodaya" width="400" height="250">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>About Mindspark</strong></h3>
+    <p>FacebookTwitter
+MindSpark - 2016, the technical festival of COEP Pune is going to be held from 23rd to 25th September. MindSpark believes on a popular saying by Nikola Tesla "The spread of civilization may be likened to a fire; first a feeble spark, next a flickering flame, then a mighty blaze, ever increasing in speed and power."
+
+With a footfall of around 20,000 every year; MindSpark has grown to become one of the best technical platforms for showcasing engineering brilliance and competing among the best. This glorious edition of MindSpark promises sustainable ideas which will leave a definite mark in the history of tech-evolution.
+
+COEP being one of the oldest engineering college of India, carries 162 years of glorious history. So an engineer must participate @TechnoSpark not only to showcase his/her technical talent, but also to explore the stories behind the historic buildings of the institute.
+
+Here is the list of events that will be held during the fest.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://www.mind-spark.org/img/smallcard/silicus.jpg" alt="silicus" width="400" height="270">
+      <h3>Silicus</h3>
+      <p class="w3-opacity">Computer/IT</p>
+      <p> Code Junkie, Code Junkie ++, Xterminate, Codeville</br></br></p>
+      <p><button class="w3-button w3-black w3-block"><a href=registration.html>Register</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://www.mind-spark.org/img/voltus.jpg" alt="Voltus" width="400" height="270">
+      <h3>Voltus</h3>
+      <p class="w3-opacity">Elec/E&TC/Instr</p>
+      <p> Circuit Fixer I, Circuit Fixer II, Encrypto, Microapps</br></br></p>
+      <p><button class="w3-button w3-black w3-block"><a href=registration.html>Register</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://www.mind-spark.org/img/smallcard/dynamus.jpg" alt="dynamus" width="400" height="270">
+      <h3>Dynamus</h3>
+      <p class="w3-opacity">Mech/Prod</p>
+      <p>Assemblix, Mechtrix, Turnament, Intelligent Design 2D, Intelligent Design 3D</p>
+      <p><button class="w3-button w3-black w3-block"><a href=registration.html>Register</a></button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="http://www.mind-spark.org/img/collatio.jpg" alt="Collation" width="400" height="270">
+      <h3>Collation</h3>
+      <p class="w3-opacity">Meta/Chem></p>
+      <p>On The Etch, Dexter’s Lab</br></br></p>
+      <p><button class="w3-button w3-black w3-block"><a href=registration.html>Register</a></button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><strong>Contact</strong></h3>
+    <label for="college"><strong>College:</strong></label>
+      <label for="clg_name">College of Engineering,Pune</label></br>
+    <label for="Address"><strong>Address:</strong></label>
+ <label for="address">College of Engg. Pune,
+Wellesely Rd,
+Shivajinagar,
+Pune-411 005.
+Maharashtra, INDIA.</label></br>
+    <h4>Co-ordinator</h4>
+    <form name="myForm" class="form-horizontal" action="comment_coep.php" method="POST" onsubmit="return validateForm()">
+
+      <label for="email"><strong>Name:</strong></label>
+      <label for="email">Shalaka Take</label></br>
+      <label for="email"><strong>Email address:</strong></label>
+     <label for="email">shalakatake15@gmail.com</label></br>
+      <label for="email"><strong>Contact:</strong></label>
+      <label for="email">8308323450</label></br></br>
+     <label for="comment"><strong>Comment:</strong></label></br></br>
+
+    
+<textarea rows="4" cols="80" placeholder="Comments" id="comm" name="comm"></textarea><div>
+
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;">
+<script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=37.0625&long=-95.6770&zoom=4&width=1350&height=400&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle="></script><br />
+<map>
+ <button type="button button1" class="w3-button w3-#6BFFC4 w3-section "><a href="https://www.google.co.in/maps/place/College+of+Engineering+Pune/@18.5293994,73.8543741,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2c0883858b873:0x1d68fbf2cac75519!8m2!3d18.5293994!4d73.8565628?hl=en"></iframe> 
+ <i class="glyphicon glyphicon-search"></i>
+<b><h7 style="color:#660033">Google Map</b></button></map>
+</div>
+
+<!-- Footer -->
+</br>
+<footer class="container-fluid text-center">
+  <center>
+<center><p>Contact Us With</p>  
+  <img src="http://marketingland.com/wp-content/ml-loads/2014/07/google-plus-logo-1920.png" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+   <img src="http://lofrev.net/wp-content/photos/2016/07/twitter_logo.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+    <img src="http://img.talkandroid.com/uploads/2014/06/instagram_app_icon-450x450.png"  class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+     <img src="http://www.hd-freeimages.com/uploads/large/logo-wallpapers/free-hd-facebook-icon-wallpapers-download.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+ </center>
+</center>
+</footer>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+function validateForm() {
+    alert("Comment sent......!!!!");
+}
+</script>
+
+</body>
+</html>

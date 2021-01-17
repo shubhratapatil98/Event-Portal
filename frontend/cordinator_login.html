@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ONLINE EVENT PORTAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 10;
+
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 50px;
+      background-color: grey;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 700px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:700;} 
+    }
+
+ 
+  .container {
+      padding: 0px 12px;
+}
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+p.padding {
+    padding-bottom: 0cm;
+}
+.jumbotron{
+margin-top: -50px;
+margin-bottom: -20px;
+background-color: sky blue;
+background-image: url("https://cdn.pixabay.com/photo/2017/01/18/10/43/banner-1989514__340.png");
+
+padding-bottom: 0;
+
+}
+
+
+.login-box{
+			background-color: rgba(220, 225,225,0.4);
+			}
+			
+body { 
+ background: url('') no-repeat center center fixed; 
+color: #a92121;
+background-color: #819ac2;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+  </style>
+</head>
+<body>
+<div class="head">
+<p class="padding= 0px">
+
+<div class="jumbotron">
+
+<center> <h1 style="color:white; text-shadow: 7px 7px black;font-family: Impact;font-size-adjust: 5.58; font-size: 900%;">ONLINE EVENT PORTAL</h1></center><br>
+</p>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="myweb.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">REGIONS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mumbai.html">MUMBAI</a></li>
+            <li><a href="pune.html">PUNE</a></li>
+             <li><a href="aurangabad.html">AURANGABAD</a></li>
+               <li><a href="nagpur.html">NAGPUR</a></li>
+          </ul>
+        </li>
+       
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<div class="container-fluid text-center">    
+  <div class="row content">
+     
+
+
+
+
+<div class="col-sm-12 text-left"> 
+   <div class="container">
+  <center><h2 style="color:  #cc0052"><b>CO-ORDINATOR LOGIN</b></h2></center></br>
+ <div class="container">
+	    
+        <div id="loginbox" style="margin-top:10px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="forgetpwd.html">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+<form name="myForm" class="form-horizontal" action="co.php" method="POST" onsubmit="return validateForm()">
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">User Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="user_name" name="username" placeholder="Enter Name">
+      </div>
+    </div>
+
+<div class="form-group">
+      <label class="control-label col-sm-2" for="email">Institute Code:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="institute_code" name="institute_code" placeholder="Enter Code">
+      </div>
+    </div>
+
+<div class="form-group">
+      <label class="control-label col-sm-2" for="email">Password:</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+      </div>
+    </div>
+
+ 
+  <br/>
+
+    
+    
+
+ 
+
+<div class="form-group">        
+      
+       <center><button id="btn-back" type="submit" name="submit20" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span>Back</button>
+
+<button type="submit" class="btn btn-warning" onsubmit="return validateForm()" value="submit"><span class="glyphicon glyphicon-arrow-right"></span>Login</button><center>
+     </div>
+      
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </form></div>
+                                    </div>
+                                </div>    
+                             
+</div>
+   </div></div>
+
+
+  </div>
+</div>
+<script>
+function myFunction() {
+    alert("Record Added Successfully......!!!!");
+}
+
+function validateForm()
+{
+    var a = document.forms["myForm"]["username"].value;
+var b = document.forms["myForm"]["institute_code"].value;
+var c = document.forms["myForm"]["password"].value;
+
+    
+if (a == "") {
+        alert("enter user name");
+        return false;
+    }
+else if (b == "")
+{
+	alert("Enter institute code");
+	return false;
+}
+else if (c == "")
+{
+	alert("Enter password");
+	return false;
+}
+
+
+else
+{
+alert("Login Successfully......!!!!");
+}
+
+}
+
+</script>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<footer class="container-fluid text-center">
+  <center>
+<center><p>Contact Us With</p>  
+  <img src="http://marketingland.com/wp-content/ml-loads/2014/07/google-plus-logo-1920.png" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+   <img src="http://lofrev.net/wp-content/photos/2016/07/twitter_logo.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+    <img src="http://img.talkandroid.com/uploads/2014/06/instagram_app_icon-450x450.png"  class="img-circle"  alt="Cinque Terre" width="70" height="70"> 
+     <img src="http://www.hd-freeimages.com/uploads/large/logo-wallpapers/free-hd-facebook-icon-wallpapers-download.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> 
+
+    <img src="http://www.clipartkid.com/images/254/thumbs-up-symbol-for-facebook-free-cliparts-that-you-can-download-to-ejq10o-clipart.jpeg" class="img-circle"  alt="Cinque Terre" width="70" height="70"> 
+
+ </center>
+</center>
+</footer>
+ </div></p>
+</body>
+</html>
